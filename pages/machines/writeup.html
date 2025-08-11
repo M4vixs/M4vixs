@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title><!-- TÍTULO --> | 0xH4CK Write-up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../../styles/writeups.css"/>
+</head>
+<body>
+
+  <!-- Sidebar fijo -->
+  <nav class="sidebar">
+    <h2>Write-up</h2>
+    <a href="#recon">Recon</a>
+    <a href="#exploit">Exploit</a>
+    <a href="#privesc">PrivEsc</a>
+    <a href="#loot">Loot</a>
+    <hr style="border: none; border-top: 1px solid var(--line); margin: 1rem 0;">
+    <a href="../../index.html">&lt; back</a>
+  </nav>
+
+  <!-- Contenido del write-up -->
+  <main class="content">
+    <h1>HTB Omni Write-up</h1>
+    <p><strong>Plataforma:</strong> HTB | <strong>Dificultad:</strong> Easy | <strong>Puntos:</strong> 40</p>
+
+    <h2 id="recon">Recon</h2>
+    <pre>nmap -sCV 10.10.10.204</pre>
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum enim laborum recusandae quis ut reiciendis soluta laudantium praesentium voluptatibus, quas amet repellendus dolor error reprehenderit quibusdam repellat ea dolorum illo ipsam eos repudiandae perferendis. Debitis similique sint, blanditiis amet facere unde dicta fuga accusantium officiis tenetur nisi eius, accusamus magnam quasi dolores. Quia commodi laudantium itaque, impedit rerum aut optio quae dolorem at odit eaque minus provident eveniet dolore omnis excepturi adipisci consequatur, magni iusto reprehenderit quidem praesentium! Cupiditate, mollitia?
+
+    <h2 id="exploit">Exploit</h2>
+    <pre>certipy req -u user@omni.htb -p 'Passw0rd!' -ca OMNI-CA -template ESC1</pre>
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, quia?
+
+    <pre>certipy req -u user@omni.htb -p 'Passw0rd!' -ca OMNI-CA -template ESC1</pre>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut, molestiae ipsam quos earum deserunt reprehenderit similique esse perferendis repudiandae accusamus totam itaque. Asperiores, libero a harum laudantium sint cumque ex soluta ipsum accusamus delectus aperiam odio facilis quod debitis maiores dicta ab obcaecati odit doloribus eveniet ut praesentium adipisci unde? Esse, corrupti. Amet officia dolorum esse eligendi animi et ipsa aperiam sapiente assumenda quisquam dignissimos, beatae numquam unde facilis?
+
+    <pre>certipy req -u user@omni.htb -p 'Passw0rd!' -ca OMNI-CA -template ESC1</pre>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eligendi?
+
+    <h2 id="privesc">PrivEsc</h2>
+    <p>Abusing ADCS template <code>ESC1</code>:</p>
+    <pre>certipy auth -pfx administrator.pfx</pre>
+
+    <h2 id="loot">Loot</h2>
+    <blockquote>Flag: <code>HTB{0mn1_15_fun}</code></blockquote>
+  </main>
+
+</body>
+</html>

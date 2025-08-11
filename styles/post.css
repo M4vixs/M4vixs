@@ -1,0 +1,107 @@
+:root {
+    --bg: #0a0a0a;
+    --red: #ff0040;
+    --green: #00ff41;
+    --grey: #666;
+    --white: #d8d8d8;
+}
+
+body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: "Courier New", monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 6vh 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Atajo flotante para volver al index */
+.back {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    color: var(--red);
+    text-decoration: none;
+    font-size: 1rem;
+    z-index: 100;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor del artículo */
+article {
+    max-width: 720px;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--red);
+    margin-bottom: 0.2rem;
+}
+
+.meta {
+    color: var(--grey);
+    font-size: 0.9rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: var(--green);
+    margin: 2rem 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: var(--white);
+    margin: 1.5rem 0 0.5rem;
+}
+
+p,
+ul,
+pre {
+    margin: 0 0 1rem;
+}
+
+pre {
+    background: #111;
+    border-left: 3px solid var(--red);
+    padding: 0.8rem 1rem;
+    overflow-x: auto;
+    color: var(--green);
+}
+
+code {
+    color: var(--green);
+    background: #111;
+    padding: 0 0.2rem;
+}
+
+blockquote {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--red);
+    color: var(--grey);
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+

